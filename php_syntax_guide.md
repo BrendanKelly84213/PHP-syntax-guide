@@ -29,9 +29,20 @@ $added = $an_int + $a_float; // The same as: 2 + 1.1
 
 # PHP Echo / Print
 
-`echo` and `print` are functions built into php which display text onto the page 
+`echo` and `print` are functions built into php which display text onto the page.
 
 `echo` has no return value, and is slightly faster than `print`. `print` will always return 1. 
+
+## echo
+```
+<?php
+    $variable = "You can include variables in echo statements.";
+
+    echo $variable;
+    echo "This outputs a string.";
+    echo "<p>You can also include HTML in an echo statement.</p>"
+?>
+```
 
 
 # PHP Data Types
