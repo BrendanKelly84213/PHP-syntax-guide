@@ -5,7 +5,7 @@ Comments are text that php will ignore.
 ```
 //This text will be ignored 
 
-/\*This text will be ignored\*/
+/*This text will be ignored*/
 ```
 
 # PHP Variables
