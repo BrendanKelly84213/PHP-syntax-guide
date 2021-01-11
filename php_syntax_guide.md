@@ -223,6 +223,218 @@ Operator are mainly divided by three groups that are totally seventeen types.
 ```
 
 # PHP If & Else & Elseif
+An if statement executes a block of code given a condition is true. If statements take a boolean argument.
+
+Syntax is as follows:
+
+```
+if (condition) {
+	  code to be executed if condition is true;
+}
+```
+
+else works in conjunction with if:
+
+```
+if(condition) {
+	do something;
+} else {
+	do something else;
+}
+```
+
+php also has elseif,
+
+```
+if(condition) {
+	do something;
+} elseif(condition) {
+	do something else;
+} else {
+	executes when both conditions are false;
+}
+```
+
+Example:
+```
+<?php
+$x = 1;
+if(x > 0) {
+	echo "thats odd";
+} elseif(x == 1) {
+	echo "that makes more sense";
+}
+
+if(x > 0) {
+	echo "thats odd";
+} else {
+	echo "This should also work";
+}
+
+?>
+```
+
 # PHP Functions
+
+PHP has over 1000 built in functions. We've already gone over echo, print and so on.
+
+Users can define their own functions as well:
+
+```
+function foo(args) {
+	do something;
+}
+```
+
+Example:
+
+```
+<?php
+function writeMsg() {
+	  echo "Hello world!";
+}
+
+writeMsg(); // call the function
+
+// You can also return a value 
+function returnMsg() {
+	return "Hello World!";
+}
+
+echo returnMsg();
+
+// Maybe a little more demonstrative: 
+function add($a, $b) {
+	return $a + $b;
+}
+
+echo add(1,1); // 2
+
+?>
+```
+
 # PHP Arrays
+An array is an ordered collection of values. In PHP, arrays associate values with keys. 
+
+Syntax:
+```
+array(
+    key  => value,
+    key2 => value2,
+    key3 => value3,
+    ...
+)
+```
+
+Example:
+
+```
+<?php
+$array = array(
+    "foo" => "bar",
+    "bar" => "foo",
+);
+
+// Using the short array syntax
+$array = [
+    "foo" => "bar",
+    "bar" => "foo",
+];
+?>
+```
+
 # PHP Loop
+
+PHP has for, while, do while and foreach loops. In general, a loop executes a block of code repeatedly until a condition is met.
+
+## for loops
+Syntax:
+
+```
+for(init; condition; increment) {
+	do something;
+}
+```
+
+Example:
+
+```
+for($i=0; i<5; ++i) {
+	echo "i: $i <br>";
+}
+
+```
+Output:
+
+```
+i: 0
+i: 1
+i: 2
+i: 3
+i: 4
+
+```
+
+## while loops
+
+Syntax:
+
+```
+while(condition) {
+	do something;
+}
+```
+
+Example:
+
+```
+<?php
+$i = 0;
+while($i<10) {
+	$i++;
+}
+
+echo $i; // 10
+?>
+```
+## do while
+
+This loop executes the block of code before checking the condition.
+
+Syntax:
+
+```
+do {
+	something;
+} while(condition);
+```
+
+Example:
+
+```
+<?php
+do {
+	echo "something"; // Executes
+} while(false);
+?>
+```
+## foreach
+
+The foreach grabs values from an array
+
+Example:
+```
+$array = array(1,2,3);
+foreach($array as $value) {
+	echo "value: $value <br>";
+}
+```
+
+Output:
+
+```
+value: 1
+value: 2
+value: 3
+
+```
