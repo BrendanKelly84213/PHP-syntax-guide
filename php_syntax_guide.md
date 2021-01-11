@@ -137,6 +137,7 @@ Operator are mainly divided by three groups that are totally seventeen types.
 
 1.Arithmetic Operator
 
+```
 + = Addition
 - = Subtraction
 * = Multiplication
@@ -219,6 +220,7 @@ Operator are mainly divided by three groups that are totally seventeen types.
 
 17.print Operator
     print = print
+```
 
 # PHP If & Else & Elseif
 # PHP Functions
