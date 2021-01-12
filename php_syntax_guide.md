@@ -335,11 +335,22 @@ $array = array(
     "bar" => "foo",
 );
 
+echo $array["foo"]; // bar
+echo $array["bar"]; // foo
+
 // Using the short array syntax
 $array = [
     "foo" => "bar",
     "bar" => "foo",
 ];
+
+// Create a regular indexed array
+$array = array(1,2,3);
+
+echo $array[0]; // 1
+echo $array[1]; // 2
+echo $array[2]; // 3
+
 ?>
 ```
 
